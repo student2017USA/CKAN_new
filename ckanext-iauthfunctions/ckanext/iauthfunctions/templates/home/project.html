@@ -1,0 +1,22 @@
+{% extends "page.html" %}
+
+{% block subtitle %}{{ _('Projects') }}{% endblock %}
+
+{% block breadcrumb_content %}
+  <li class="active">{% link_for _('Projects'), named_route='home.project' %}</li>
+{% endblock %}
+
+{% block primary %}
+  <article class="module" role="main">
+    <div class="module-content">
+      {% block project %}
+        <h1 class="page-heading">{{ _('Projects') }}</h1>
+
+        <p>This a page for showing all the Projects added.</p>
+      {% endblock %}
+    </div>
+  </article>
+{% endblock %}
+
+{% block secondary %}{% endblock %}
+

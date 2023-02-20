@@ -1,0 +1,88 @@
+2023-01-04 18:01:06,083 INFO  [ckan.cli] Using configuration file /etc/ckan/default/ckan.ini
+2023-01-04 18:01:06,083 INFO  [ckan.config.environment] Loading static files from public
+2023-01-04 18:01:06,249 WARNI [ckan.common] Option ckan.plugins is not declared
+2023-01-04 18:01:06,458 ERROR [ckan.lib.search.common] Solr responded with an error (HTTP 404): [Reason: None]
+<p>  Searching for Solr?  You must type the correct path.  Solr will respond.</p>
+Traceback (most recent call last):
+  File "/home/farhaz/ckan/lib/default/src/ckan/ckan/lib/search/common.py", line 69, in is_available
+    conn.search(q="*:*", rows=1)
+  File "/usr/lib/ckan/default/lib/python3.7/site-packages/pysolr.py", line 827, in search
+    response = self._select(params, handler=search_handler)
+  File "/usr/lib/ckan/default/lib/python3.7/site-packages/pysolr.py", line 488, in _select
+    return self._send_request("get", path)
+  File "/usr/lib/ckan/default/lib/python3.7/site-packages/pysolr.py", line 463, in _send_request
+    raise SolrError(error_message % (resp.status_code, solr_message))
+pysolr.SolrError: Solr responded with an error (HTTP 404): [Reason: None]
+<p>  Searching for Solr?  You must type the correct path.  Solr will respond.</p>
+2023-01-04 18:01:06,460 WARNI [ckan.lib.search] Problems were found while connecting to the SOLR server
+2023-01-04 18:01:06,461 INFO  [ckan.config.environment] Loading templates from /home/farhaz/ckan/lib/default/src/ckan/ckan/templates
+2023-01-04 18:01:06,922 ERROR [ckan.lib.search.common] Solr responded with an error (HTTP 404): [Reason: None]
+<p>  Searching for Solr?  You must type the correct path.  Solr will respond.</p>
+Traceback (most recent call last):
+  File "/home/farhaz/ckan/lib/default/src/ckan/ckan/lib/search/common.py", line 69, in is_available
+    conn.search(q="*:*", rows=1)
+  File "/usr/lib/ckan/default/lib/python3.7/site-packages/pysolr.py", line 827, in search
+    response = self._select(params, handler=search_handler)
+  File "/usr/lib/ckan/default/lib/python3.7/site-packages/pysolr.py", line 488, in _select
+    return self._send_request("get", path)
+  File "/usr/lib/ckan/default/lib/python3.7/site-packages/pysolr.py", line 463, in _send_request
+    raise SolrError(error_message % (resp.status_code, solr_message))
+pysolr.SolrError: Solr responded with an error (HTTP 404): [Reason: None]
+<p>  Searching for Solr?  You must type the correct path.  Solr will respond.</p>
+2023-01-04 18:01:06,923 WARNI [ckan.lib.search] Problems were found while connecting to the SOLR server
+2023-01-04 18:01:06,929 INFO  [ckan.config.environment] Loading templates from /home/farhaz/ckan/lib/default/src/ckan/ckan/templates
+2023-01-04 18:01:07,121 WARNI [ckan.config.middleware.flask_app] Extensions are excluded from CSRF protection! We allow extensions to run without CSRF protection but it will be forced future releases. Read the documentation for more information on how to add CSRF protection to your extension.
+2023-01-04 18:01:07,164 INFO  [ckan.cli.server] Running CKAN on http://0.0.0.0:5000
+2023-01-04 18:01:08,129 INFO  [ckan.cli] Using configuration file /etc/ckan/default/ckan.ini
+2023-01-04 18:01:08,129 INFO  [ckan.config.environment] Loading static files from public
+2023-01-04 18:01:08,292 WARNI [ckan.common] Option ckan.plugins is not declared
+2023-01-04 18:01:08,500 ERROR [ckan.lib.search.common] Solr responded with an error (HTTP 404): [Reason: None]
+<p>  Searching for Solr?  You must type the correct path.  Solr will respond.</p>
+Traceback (most recent call last):
+  File "/home/farhaz/ckan/lib/default/src/ckan/ckan/lib/search/common.py", line 69, in is_available
+    conn.search(q="*:*", rows=1)
+  File "/usr/lib/ckan/default/lib/python3.7/site-packages/pysolr.py", line 827, in search
+    response = self._select(params, handler=search_handler)
+  File "/usr/lib/ckan/default/lib/python3.7/site-packages/pysolr.py", line 488, in _select
+    return self._send_request("get", path)
+  File "/usr/lib/ckan/default/lib/python3.7/site-packages/pysolr.py", line 463, in _send_request
+    raise SolrError(error_message % (resp.status_code, solr_message))
+pysolr.SolrError: Solr responded with an error (HTTP 404): [Reason: None]
+<p>  Searching for Solr?  You must type the correct path.  Solr will respond.</p>
+2023-01-04 18:01:08,504 WARNI [ckan.lib.search] Problems were found while connecting to the SOLR server
+2023-01-04 18:01:08,505 INFO  [ckan.config.environment] Loading templates from /home/farhaz/ckan/lib/default/src/ckan/ckan/templates
+2023-01-04 18:01:08,941 ERROR [ckan.lib.search.common] Solr responded with an error (HTTP 404): [Reason: None]
+<p>  Searching for Solr?  You must type the correct path.  Solr will respond.</p>
+Traceback (most recent call last):
+  File "/home/farhaz/ckan/lib/default/src/ckan/ckan/lib/search/common.py", line 69, in is_available
+    conn.search(q="*:*", rows=1)
+  File "/usr/lib/ckan/default/lib/python3.7/site-packages/pysolr.py", line 827, in search
+    response = self._select(params, handler=search_handler)
+  File "/usr/lib/ckan/default/lib/python3.7/site-packages/pysolr.py", line 488, in _select
+    return self._send_request("get", path)
+  File "/usr/lib/ckan/default/lib/python3.7/site-packages/pysolr.py", line 463, in _send_request
+    raise SolrError(error_message % (resp.status_code, solr_message))
+pysolr.SolrError: Solr responded with an error (HTTP 404): [Reason: None]
+<p>  Searching for Solr?  You must type the correct path.  Solr will respond.</p>
+2023-01-04 18:01:08,942 WARNI [ckan.lib.search] Problems were found while connecting to the SOLR server
+2023-01-04 18:01:08,944 INFO  [ckan.config.environment] Loading templates from /home/farhaz/ckan/lib/default/src/ckan/ckan/templates
+2023-01-04 18:01:09,126 WARNI [ckan.config.middleware.flask_app] Extensions are excluded from CSRF protection! We allow extensions to run without CSRF protection but it will be forced future releases. Read the documentation for more information on how to add CSRF protection to your extension.
+2023-01-04 18:01:09,167 INFO  [ckan.cli.server] Running CKAN on http://0.0.0.0:5000
+2023-01-04 18:01:11,944 INFO  [ckan.config.middleware.flask_app]  200 / render time 0.681 seconds
+2023-01-04 18:01:12,026 INFO  [ckan.config.middleware.flask_app]  304 /webassets/base/a6ed3cdb_main.css render time 0.004 seconds
+2023-01-04 18:01:12,070 INFO  [ckan.config.middleware.flask_app]  200 /webassets/ckanext-activity/8b1d0bf4_activity.css render time 0.003 seconds
+2023-01-04 18:01:12,074 INFO  [ckan.config.middleware.flask_app]  304 /webassets/vendor/f3b8236b_select2.css render time 0.003 seconds
+2023-01-04 18:01:12,089 INFO  [ckan.config.middleware.flask_app]  304 /webassets/base/6fcec191_main.js render time 0.003 seconds
+2023-01-04 18:01:12,096 INFO  [ckan.config.middleware.flask_app]  304 /webassets/vendor/5027b870_vendor.js render time 0.003 seconds
+2023-01-04 18:01:12,100 INFO  [ckan.config.middleware.flask_app]  304 /webassets/vendor/6d1ad7e6_bootstrap.js render time 0.003 seconds
+2023-01-04 18:01:12,115 INFO  [ckan.config.middleware.flask_app]  304 /webassets/base/cb53ea5d_ckan.js render time 0.003 seconds
+2023-01-04 18:01:12,153 INFO  [ckan.config.middleware.flask_app]  304 /webassets/vendor/d05bf0e7_fontawesome.css render time 0.003 seconds
+2023-01-04 18:01:12,157 INFO  [ckan.config.middleware.flask_app]  304 /webassets/activity/0fdb5ee0_activity.js render time 0.003 seconds
+2023-01-04 18:01:12,180 INFO  [ckan.config.middleware.flask_app]  304 /webassets/vendor/8c3c143a_jquery.js render time 0.003 seconds
+2023-01-04 18:01:12,235 INFO  [ckan.config.middleware.flask_app]  304 /base/images/placeholder-420x220.png render time 0.004 seconds
+2023-01-04 18:01:12,239 INFO  [ckan.config.middleware.flask_app]  304 /base/images/ckan-logo.png render time 0.003 seconds
+2023-01-04 18:01:12,252 INFO  [ckan.config.middleware.flask_app]  304 /base/images/od_80x15_blue.png render time 0.003 seconds
+2023-01-04 18:01:12,263 INFO  [ckan.config.middleware.flask_app]  200 /base/images/bg.png render time 0.003 seconds
+2023-01-04 18:01:12,274 INFO  [ckan.config.middleware.flask_app]  200 /base/images/background-tile.png render time 0.003 seconds
+2023-01-04 18:01:12,299 INFO  [ckan.config.middleware.flask_app]  200 /base/images/ckan-logo-footer.png render time 0.004 seconds
+2023-01-04 18:01:12,349 INFO  [ckan.config.middleware.flask_app]  304 /base/images/ckan.ico render time 0.004 seconds

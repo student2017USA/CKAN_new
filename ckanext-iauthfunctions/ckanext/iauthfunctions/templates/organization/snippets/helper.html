@@ -1,0 +1,90 @@
+{#
+  Displays a sidebard module with information about organizations.
+
+  group_type    - The type of organization.
+
+  Example:
+
+  {% snippet "organization/snippets/helper.html", group_type=group_type %}
+
+  #}
+
+
+  <div >
+    <h2 class="module-heading">
+      {{ _('Nach organizations') }}
+    </h2>
+    <div class="module-content">
+      <ul class="navbar-nav sidenav">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Link A</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link B</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link C</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link D</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link E</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link F</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link G</a>
+        </li>
+        </ul>
+        <ul class="moreBtns">
+          <li class="nav-item">
+              <a class="nav-link" href="#">Next Links</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Next Links</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Next Links</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Next Links</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Next Links</a>
+          </li>
+      </ul>
+      <button id="morelessbtn"><i class="fa fa-angle-down"></i> Zeige mehr Kategorien</button>
+      <p>
+        <!-- {% trans %}
+          CKAN Organizations are used to create, manage and publish collections
+          of datasets. Users can have different roles within an Organization,
+          depending on their level of authorisation to create, edit and publish.
+        {% endtrans %} -->
+      </p>
+    </div>
+
+    <h2 class="module-heading">
+      {{ _('Nach Personen') }}
+    </h2>
+    <div class="module-content">
+      <ul class="navbar-nav sidenav">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Link A</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link B</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link C</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link D</a>
+        </li>
+        
+        </ul>
+      
+    </div>
+  </div>
+  

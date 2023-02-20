@@ -1,0 +1,67 @@
+{{ h.render_assets('style') }}
+{{ h.render_assets('script') }}
+{% set tags = h.get_facet_items_dict('tags', search_facets, limit=3) %}
+{% set placeholder = _('Search') %}
+{% set dataset_type = h.default_package_type() %}
+
+{%- block banner %}
+	<section class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+                    <h2>Find Swiss Open<br /> Government data</h2>
+                    <a href="" class="lrnMore">Learn More</a><br />
+                    <a href="" class="lrnMore">Learn More</a>
+                </div>
+				<div class="col-md-6 bnrRight">
+                    <h1>7'553</h1>
+                    <h5>Datasets</h5>
+                    <form class="module-content search-form" method="get" action="{% url_for dataset_type ~ '.search' %}">
+                        <div class="search-input form-group search-giant">
+							<input aria-label="{% block header_site_search_label %}{{ h.humanize_entity_type('package', dataset_type, 'search placeholder') or _('Search datasets') }}{% endblock %}" id="field-main-search" type="text" class="form-control" name="q" value="" autocomplete="off" placeholder="{% block search_placeholder %}{{ placeholder }}{% endblock %}" />
+							<button class="btn" type="submit" aria-labelledby="search-label">
+							  <i class="fa fa-search"></i>
+							  <span class="sr-only" id="search-label">{{ _('Search') }}</span>
+							</button>
+						  </div>
+                    </form>
+                    <a href="">Access the data catalogue using the API</a>
+                </div>
+			</div>
+		</div>
+	</section>
+{% endblock -%}
+
+{%- block home_middle %}
+	<section class="homeMiddle">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="numberBox">
+						<h4>Demo Heading will be here.</h4>
+						<div class="numberBlock">
+							<div class="numInn">
+								<h5>7553</h5>
+								<p>Demo text</p>
+							</div>
+							<div class="numInn">
+								<h5>7553</h5>
+								<p>Demo text</p>
+							</div>
+							<div class="numInn">
+								<h5>7553</h5>
+								<p>Demo text</p>
+							</div>
+							<div class="numInn">
+								<h5>7553</h5>
+								<p>Demo text</p>
+							</div>
+						</div>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisici elit Lorem ipsum dolor sit amet, consectetur adipisici elit Lorem ipsum dolor sit amet, consectetur adipisici elit Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipisici elit Lorem ipsum dolor sit amet, consectetur adipisici elit Lorem ipsum dolor sit amet, consectetur adipisici elit Lorem ipsum dolor sit </p>
+				</div>
+			</div>
+	</div>
+</section>
+
+{% endblock -%}

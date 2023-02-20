@@ -1,0 +1,22 @@
+{% extends "page.html" %}
+
+{% block subtitle %}{{ _('Blog') }}{% endblock %}
+
+{% block breadcrumb_content %}
+  <li class="active">{% link_for _('Blog'), named_route='home.blog' %}</li>
+{% endblock %}
+
+{% block primary %}
+  <article class="module" role="main">
+    <div class="module-content">
+      {% block blog %}
+        <h1 class="page-heading">{{ _('Blog') }}</h1>
+
+        <p>What is Lorem Ipsum?Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      {% endblock %}
+    </div>
+  </article>
+{% endblock %}
+
+{% block secondary %}{% endblock %}
+

@@ -1,0 +1,100 @@
+<footer >
+  <section class="site-footer1">
+    {% block footer_contents %}
+    <div class="container">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <h1 style="color:white;">Get involved</h1>
+              </div>
+              <div class="col-md-6">
+                {% block footer_data %}
+                  <a href="" class="lrnMore">Learn to publish data</a>
+                  {% endblock %}
+              </div>
+              
+          </div>
+      </div>
+      </div>
+    </div>
+    {% endblock %}
+  </section>
+  <section class="site-footer">
+  <div class="container">
+    {% block footer_content %}
+      <div class="row">
+        <div class="col-md-12 footer-links">
+          {% block footer_nav %}
+            <div >
+              {% block footer_links %}
+              <div class="row">
+                          <div class="col-md-3">
+                            <a href="">
+                                <h3>7553 <span><i class="far fa-copy"></i></span></h3>
+                                <span>Datasets</span>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="">
+                              <h3>102 <span><i class="fas fa-users"></i></span></h3>
+                              <span>Organizations</span>
+                          </a>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="">
+                            <h3>24 <span><i class="fas fa-tags"></i></span></h3>
+                            <span>Categories</span>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                      <a href="">
+                          <h3>89 <span><i class="fas fa-puzzle-piece"></i></span></h3>
+                          <span>Showcases</span>
+                      </a>
+                  </div>
+              </div>
+              {% endblock %}
+              </div>
+            
+          {% endblock %}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer-middle">
+            <h4>A joint project of the Confederation and the cantons</h4>
+            <p>{% trans %}The opendata.swiss portal is a joint project of the Confederation, cantons, communes and other organizations with a mandate from the state. It makes open government data available to the general public in a central catalogue. opendata.swiss is operated by the Federal Statistical Office.{% endtrans %}</p>
+          </div>          
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3 fluideImg">
+          <a href="{{ h.url_for('admin.index') }}"><img src="/base/images/footer-logo.png" alt=""></a>
+        </div>
+      </div>
+    {% endblock %}
+  </div>
+</section>
+<section class="site-footer2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        {% block footer_lang %}
+        {% snippet "snippets/language_selector.html" %}
+        {% endblock %}
+      </div>
+      <div class="col-md-10 footerLink">
+          {% block footer_links_ckan %}
+          <a href="{{ h.url_for('home.about') }}">{{ _('About') }}</a>
+            <a href="{{ h.url_for('home.contact') }}">{{ _('Contact') }}</a>
+            <a href="#">{{ _('Data') }}</a>
+            <a href="#">{{ _('Organizations') }}</a>
+            <a href="terms.html">Terms of use</a>
+            
+          {% endblock %}
+      </div>
+    </div>
+  </div>
+</section>
+
+</footer>
